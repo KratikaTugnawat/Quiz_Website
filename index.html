@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="px-10">
+
+    <div class="login " id="login">
+      <h2 class="text-5xl mb-5">Login</h2>
+      <form>
+        <label for="login_username">Username:</label>
+        <input type="text" id="login_username" required />
+        <label for="login_password">Password:</label>
+        <input type="password" id="login_password" required />
+        <button class="border border-black" type="button" onclick="login()">
+          Login
+        </button>
+      </form>
+      <p>
+        Don't have an account? <a href="#" onclick="showSignup()">Sign up</a>
+      </p>
+    </div>
+
+    <div class="register hidden" id="register">
+      <h1 class="text-5xl mb-5">Register</h1>
+      <form>
+        <label for="signup_username">Username:</label>
+        <input type="text" id="signup_username" required />
+        <label for="signup_password">Password:</label>
+        <input type="password" id="signup_password" required />
+        <button class="border border-black" type="button" onclick="signup()">
+          Sign Up
+        </button>
+      </form>
+      <p>
+        Already have an account? <a href="#" onclick="showLogin()">Login</a>
+      </p>
+    </div>
+
+    <div class="createQuiz hidden" id="createQuiz">
+      <h1 class="text-5xl mb-5">Create Quiz</h1>
+      <div class="quizForm" id="quizForm">
+        <form id="quizForm1" class="flex">
+          <label for="question">Question</label>
+          <input
+            class="border border-black"
+            type="text"
+            name="question"
+            id="question"
+          />
+          <label for="option">Option 1</label>
+          <input
+            class="border border-black"
+            type="text"
+            name="option1"
+            id="option1"
+          />
+          <label for="answer">Option 2</label>
+          <input
+            class="border border-black"
+            type="text"
+            name="option2"
+            id="option2"
+          />
+          <label for="answer">Option 3</label>
+          <input
+            class="border border-black"
+            type="text"
+            name="option3"
+            id="option3"
+          />
+          <label for="answer">Correct Answer</label>
+          <input type="text" name="answer" id="answer" />
+          <button class="border border-black" type="submit">Submit</button>
+        </form>
+      </div>
+      <button class="border border-black mt-5" onclick="showQuestions()">View Questions</button>
+    </div>
+
+    <div class="viewQuestions hidden" id="viewQuestions">
+      <h1 class="text-5xl">Questions</h1>
+      <div id="questions">
+      </div>
+      <button class="border border-black mt-5" onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div class="startQuiz hidden" id="startQuiz">
+      <h1 class="text-5xl">Quiz</h1>
+      <div id="quiz_questions">
+      </div>
+    </div>
+
+    <div class="score hidden" id="score"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
