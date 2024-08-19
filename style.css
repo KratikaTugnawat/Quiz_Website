@@ -2,165 +2,165 @@
 
 /* General Styles */
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f0f4f8;
-  color: #1f2937;
-  line-height: 1.6;
-  padding: 20px;
-}
-
-h1, h2 {
-  font-weight: bold;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-form {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.5rem;
-}
-
-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #374151;
-}
-
-input[type="text"], input[type="password"] {
-  width: 100%;
-  padding: 0.75rem;
-  border-radius: 0.5rem;
-  border: 1px solid #d1d5db;
-  margin-bottom: 1rem;
-  transition: border-color 0.2s;
-}
-
-input[type="text"]:focus, input[type="password"]:focus {
-  outline: none;
-  border-color: #10b981;
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.3);
-}
-
-button {
-  background-color: #3b82f6;
-  color: #ffffff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  transition: background-color 0.2s, transform 0.2s;
-  border: none;
-}
-
-button:hover {
-  background-color: #2563eb;
-  transform: translateY(-2px);
-}
-
-button:active {
-  background-color: #1d4ed8;
-}
-
-a {
-  color: #3b82f6;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-a:hover {
-  color: #2563eb;
-}
-
-/* Layout and Utility Classes */
-.hidden {
-  display: none;
-}
-
-.flex {
-  display: flex;
-  flex-direction: column;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-/* Section-Specific Styles */
-.login {
-  max-width: 500px;
-  margin: auto;
-  margin-top: 4rem;
-  background-color: #60a5fa;
-  padding: 2rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.register {
-  max-width: 500px;
-  margin: auto;
-  margin-top: 4rem;
-  background-color: #34d399;
-  padding: 2rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.createQuiz {
-  max-width: 700px;
-  margin: auto;
-  margin-top: 4rem;
-  background-color: #6dd563;
-  padding: 2rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.viewQuestions {
-  max-width: 700px;
-  margin: auto;
-  margin-top: 4rem;
-  background-color: #d483ad;
-  padding: 2rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.startQuiz {
-  max-width: 700px;
-  margin: auto;
-  margin-top: 4rem;
-  background-color: #b5a8dc;
-  padding: 2rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.score {
-  max-width: 500px;
-  margin: auto;
-  margin-top: 4rem;
-  background-color: #6ee7b7;
-  padding: 2rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-#questions, #quiz_questions {
-  margin-top: 1rem;
-}
-
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8;
+    color: #1f2937;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #374151;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+    margin-bottom: 1rem;
+    transition: border-color 0.2s;
+  }
+  
+  input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.3);
+  }
+  
+  button {
+    background-color: #3b82f6;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.2s;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    background-color: #1d4ed8;
+  }
+  
+  a {
+    color: #3b82f6;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  a:hover {
+    color: #2563eb;
+  }
+  
+  /* Layout and Utility Classes */
+  .hidden {
+    display: none;
+  }
+  
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mb-5 {
+    margin-bottom: 1.25rem;
+  }
+  
+  .mt-5 {
+    margin-top: 1.25rem;
+  }
+  
+  .px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  
+  /* Section-Specific Styles */
+  .login {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 4rem;
+    background-color: #60a5fa;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 4rem;
+    background-color: #34d399;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .createQuiz {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 4rem;
+    background-color: #6dd563;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .viewQuestions {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 4rem;
+    background-color: #d483ad;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .startQuiz {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 4rem;
+    background-color: #b5a8dc;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .score {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 4rem;
+    background-color: #6ee7b7;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  #questions, #quiz_questions {
+    margin-top: 1rem;
+  }
+  
